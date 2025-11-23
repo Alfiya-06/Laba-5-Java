@@ -14,7 +14,7 @@ public class RussianLetter {
             throw new IllegalArgumentException("Имя файла не может быть пустым.");
         }
         this.filePath = Path.of(fileName);
-        this.letters = new LinkedHashSet<>(); // ✅ Вот тут изменение
+        this.letters = new LinkedHashSet<>();
     }
 
     public void countLetters() throws IOException {
@@ -45,4 +45,5 @@ public class RussianLetter {
         return "Уникальные русские буквы: " + letters +
                 "\nКоличество: " + letters.size();
     }
+
 }
